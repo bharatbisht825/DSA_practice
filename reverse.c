@@ -2,13 +2,17 @@
 #include<stdlib.h>
 void main(){
     int ar[5]={4,5,6,7,8};
-    for(int i=0;i<=3;i++){
-        int z=i+1;
-        if(ar[i]>ar[z]){
-            printf("not sorted");
-            break;
-        }
-       
-    }
-
+   int initial=0,final=4,temp;
+   while(initial<=final){
+        temp=ar[initial];
+        ar[initial]=ar[final];
+        ar[final]=temp;
+        initial=initial+1;
+        final=final-1;
+   }
+   for (int i = 0; i < 5; i++)
+   {
+    printf("%d ",ar[i]);
+   }
+   
 }
