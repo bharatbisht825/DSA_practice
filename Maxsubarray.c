@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 void main(){
-    int ar[6]={-5,2,18,-121,8,7};
+    int ar[6]={-5,-2,18,-121,-8,-7};
     int end=1,start=0,last=end,max=0,setStart,setEnd;
 
     // to increase the size of window
